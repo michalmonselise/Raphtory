@@ -10,7 +10,7 @@ class BenchmarkSpout extends Spout[String] {
   override def setupDataSource(): Unit = {
 
     fileQueue ++=
-      scala.io.Source.fromFile("../../data/college_seq.csv")
+      scala.io.Source.fromFile("./data/college_seq.csv")
         .getLines
   }
 
